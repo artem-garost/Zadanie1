@@ -3,17 +3,17 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        int [] posled =new int[args.length];
-        for (int i=0;i<args.length;i++) {
+        int[] posled = new int[args.length];
+        for (int i = 0; i < args.length; i++) {
             posled[i] = Integer.parseInt(args[i]);
             System.out.print(posled[i] + " ");
         }
         System.out.println();
-        for (int j=0;j<args.length;j++) {
-            if (posled[0]==posled[j+1])
+        for (int j = 0; j < args.length; j++) {
+            if (posled[0] == posled[j + 1])
                 System.out.println("Равны");
-else
-    System.out.println("Не равны");
+            else
+                System.out.println("Не равны");
         }
            /* for (int k = j + 1; k < args.length; k++) {
                 if (posled[j] == posled[k])
