@@ -10,13 +10,18 @@ public class Main {
         }
         System.out.println();
         for (int j=0;j<args.length;j++) {
-            for (int k = j + 1; k < args.length; k++) {
+            if (posled[0]==posled[j+1])
+                System.out.println("Равны");
+else
+    System.out.println("Не равны");
+        }
+           /* for (int k = j + 1; k < args.length; k++) {
                 if (posled[j] == posled[k])
                     System.out.println(posled[j]+" Равно "+posled[k]);
                 else
                     System.out.println(posled[j]+" Не ранвно "+posled[k]);
             }
 
-        }
+        }*/
     }
 }
